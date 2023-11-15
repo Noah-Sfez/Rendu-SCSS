@@ -1,0 +1,77 @@
+.partage {
+    height: 80vh;
+    background-image: url(../../images/élément-1.png);
+    background-repeat: repeat;
+    display: grid;
+    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+
+    &-img {
+        justify-items: center;
+        width: 40%;
+        height: auto;
+        margin-left: 5%;
+    
+    }
+    h2 {
+        display: grid;
+        grid-column: 2 / 3;
+        align-items: center;
+        justify-items: start;
+        padding: 2% 0%;
+        color: $clr-green;
+        font-size: $font-size-large;
+        font-family: $font-family-poppins;
+    }        
+        
+        p {
+            margin-top: 2%;
+            font-size: $font-size-base;
+            line-height: 24pt;
+            color: $clr-grey;
+            font-family: $font-family-poppins;
+        }
+    
+
+    &-form {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        @include flex(center, center, true);
+        gap: 20px;
+
+        & label {
+            color: $clr-green;
+            font-size: 23px;
+            font-family: $font-family-poppins;
+            font-style: italic;
+        }
+
+        & button {
+            margin-top: 2em;
+            background-color: $clr-green;
+            padding: 14px 60px;
+            color: $clr-white;
+            font-size: 24px;
+            width: 30%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+        }
+    }
+
+}
+
+.partage-txt {
+    width: 95%;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    resize: none;
+}
+

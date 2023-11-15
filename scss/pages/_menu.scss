@@ -1,0 +1,102 @@
+.menu {
+    background-image: url(../../images/pattern-1.png);
+    background-repeat: repeat;
+    height: 140vh;
+    @include flex(center, center, true);
+    margin-top: 5%;
+
+    &-txt {
+        width: 80%;
+        text-align: center;
+        
+        h2 {
+            color: $clr-green;
+            font-size: $font-size-large;
+            font-family: $font-family-poppins;
+            margin-bottom: 5%;
+        }
+        p {
+            font-size: $font-size-base;
+            line-height: 24pt;
+            color: $clr-grey;
+            font-family: $font-family-poppins;
+        }
+    }
+}
+
+.menu-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 180px;
+    margin-top: 5%;
+}
+
+.menu-carte {
+    grid-column: 1 / 2;
+    justify-content: center;
+
+    &-content {
+        @include flex(start, start, true);
+        flex-direction: column;
+        margin-bottom: 10%;
+
+        >div{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        h4 {
+            font-size: 24px;
+            color: $clr-green;
+            font-family: $font-family-poppins;
+            margin-bottom: 2%;
+            gap: 100px;
+        }
+        p {
+            color: $clr-grey;
+        }
+        
+    }
+}
+
+.menu-carte-content.special{
+    border: 2px solid $clr-green;
+    padding: 1%;
+}
+
+.menu-pub {
+    @include flex(center, center, true);
+    flex-direction: column;
+
+    h2 {
+        font-size: 64px;
+        font-family: $font-family-poppins;
+        margin-bottom: 5%;
+        rotate: -9deg;
+        margin-bottom: 5%;
+        font-style: italic;
+        &.green {
+            color: $clr-green;
+        }
+        &.blue {
+            color: #60A0D8;
+        }
+    }
+    p {
+        margin-top: 2em;
+        color: $clr-grey;
+        font-size: $font-size-base;
+        line-height: 24pt;
+    }
+    button {
+        margin-top: 2em;
+        background-color: $clr-green;
+        padding: 14px 60px;
+        color: $clr-white;
+        font-size: 24px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    }
+}

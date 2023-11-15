@@ -1,0 +1,13 @@
+
+@mixin flex($align, $justify: center, $wrap: false) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    @if $wrap {
+        flex-wrap: wrap;
+    }
+}
+
+//.header {
+//    @include flex(center, space-between, true);
+//}

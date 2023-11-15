@@ -1,0 +1,460 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* This file is intentionally left blank */
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../images/Opacity overlay.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-image: url(../../images/Header\ back.png);
+  backdrop-filter: url(../../images/Opacity\ overlay.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  position: relative;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+header nav ul li {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  transition: 0.5s;
+}
+header nav ul li li:hover {
+  text-decoration: underline;
+}
+
+li.button {
+  background-color: white;
+  color: #B2D234;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.header-title h1 {
+  font-size: 128px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.header-title h2 {
+  margin-top: 2%;
+  font-size: 52px;
+  position: relative;
+  rotate: -9deg;
+  color: white;
+  left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+
+.surMesure {
+  background-image: url(../../images/élément-1.png);
+  background-repeat: repeat;
+  height: 120vh;
+  width: 100%;
+  display: flex;
+}
+.surMesure img {
+  width: 90%;
+  height: 90%;
+}
+.surMesure-content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  height: 80%;
+  width: 100%;
+}
+.surMesure-content h3 {
+  font-size: 52px;
+  color: #B2D234;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+.surMesure-content p {
+  font-size: 18px;
+  color: #606060;
+  line-height: 24pt;
+  font-family: "Poppins", sans-serif;
+}
+.surMesure-content button {
+  background-color: #B2D234;
+  padding: 14px 60px;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.preparation {
+  background-image: url(../../images/ismael-trevino-NDyuR4Huig8-unsplash.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.preparation-content {
+  background-color: rgba(178, 210, 50, 0.85);
+  width: 30%;
+  padding: 1% 5%;
+  margin-left: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.25);
+}
+.preparation-content h2 {
+  font-size: 52px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.preparation-content p {
+  font-size: 18px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  line-height: 24pt;
+}
+.preparation-content button {
+  background-color: white;
+  width: 240px;
+  padding: 14px 60px;
+  color: #B2D234;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+  background-image: url(../../images/pattern-1.png);
+  background-repeat: repeat;
+  height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.menu-txt {
+  width: 80%;
+  text-align: center;
+}
+.menu-txt h2 {
+  color: #B2D234;
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5%;
+}
+.menu-txt p {
+  font-size: 18px;
+  line-height: 24pt;
+  color: #606060;
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 180px;
+  margin-top: 5%;
+}
+
+.menu-carte {
+  grid-column: 1/2;
+  justify-content: center;
+}
+.menu-carte-content {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+.menu-carte-content > div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.menu-carte-content h4 {
+  font-size: 24px;
+  color: #B2D234;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 2%;
+  gap: 100px;
+}
+.menu-carte-content p {
+  color: #606060;
+}
+
+.menu-carte-content.special {
+  border: 2px solid #B2D234;
+  padding: 1%;
+}
+
+.menu-pub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.menu-pub h2 {
+  font-size: 64px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5%;
+  rotate: -9deg;
+  margin-bottom: 5%;
+  font-style: italic;
+}
+.menu-pub h2.green {
+  color: #B2D234;
+}
+.menu-pub h2.blue {
+  color: #60A0D8;
+}
+.menu-pub p {
+  margin-top: 2em;
+  color: #606060;
+  font-size: 18px;
+  line-height: 24pt;
+}
+.menu-pub button {
+  margin-top: 2em;
+  background-color: #B2D234;
+  padding: 14px 60px;
+  color: white;
+  font-size: 24px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.aliments {
+  height: 100vh;
+  background-image: url(../../images/louis-hansel-MlPD-AzZYMg-unsplash.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.cards {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+}
+.cards h2 {
+  font-size: 52px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.cards li {
+  color: white;
+  font-size: 18px;
+}
+.cards.bleus {
+  background-color: rgba(95, 160, 216, 0.85);
+}
+.cards.verts {
+  background-color: rgba(177, 209, 51, 0.85);
+}
+.cards div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.cards div li {
+  line-height: 20pt;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.partage {
+  height: 80vh;
+  background-image: url(../../images/élément-1.png);
+  background-repeat: repeat;
+  display: grid;
+  justify-items: start;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+.partage-img {
+  justify-items: center;
+  width: 40%;
+  height: auto;
+  margin-left: 5%;
+}
+.partage h2 {
+  display: grid;
+  grid-column: 2/3;
+  align-items: center;
+  justify-items: start;
+  padding: 2% 0%;
+  color: #B2D234;
+  font-size: 52px;
+  font-family: "Poppins", sans-serif;
+}
+.partage p {
+  margin-top: 2%;
+  font-size: 18px;
+  line-height: 24pt;
+  color: #606060;
+  font-family: "Poppins", sans-serif;
+}
+.partage-form {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.partage-form label {
+  color: #B2D234;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+}
+.partage-form button {
+  margin-top: 2em;
+  background-color: #B2D234;
+  padding: 14px 60px;
+  color: white;
+  font-size: 24px;
+  width: 30%;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.partage-txt {
+  width: 95%;
+}
+
+input {
+  height: 30px;
+}
+
+textarea {
+  resize: none;
+}
+
+/*# sourceMappingURL=style.css.map */
