@@ -1,7 +1,7 @@
 .menu {
     background-image: url(../../images/pattern-1.png);
     background-repeat: repeat;
-    height: 140vh;
+    height: 120vh;
     @include flex(center, center, true);
     margin-top: 5%;
 
@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 180px;
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 .menu-carte {
@@ -55,6 +55,7 @@
         }
         p {
             color: $clr-grey;
+            font-family: $font-family-poppins;
         }
         
     }
@@ -87,6 +88,7 @@
         margin-top: 2em;
         color: $clr-grey;
         font-size: $font-size-base;
+        font-family: $font-family-poppins;
         line-height: 24pt;
     }
     button {

@@ -12,39 +12,38 @@ header::before {
 }
 
 header {
-    background-image: url(../../images/Header\ back.png);
-    backdrop-filter: url(../../images/Opacity\ overlay.png);
+    background-image: url('../../images/Header back.png');
+    backdrop-filter: url('../../images/Opacity overlay.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     position: relative;
-
+  
     nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 40px;
-        position: relative;
-
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      position: relative;
+  
         ul {
             display: flex;
             align-items: center;
             gap: 60px;
-
+    
             li {
                 color: $clr-white;
                 font-family: $font-family-poppins;
                 font-size: $font-size-base;
-                transition: 0.5s;
-
-                li:hover {
+                transition: text-decoration 0.5s; // Ici, spécifie la propriété que tu veux animer
+        
+                &:hover { // Utilise le & pour indiquer que c'est le même élément li
                     text-decoration: underline;
                 }
-            };
+            }
         }
     }
-    
-}
+  }
 li.button {
     background-color: $clr-white;
     color: $clr-green;
@@ -78,5 +77,16 @@ li.button {
         left: 30px;
         font-family: $font-family-poppins;
         font-style: italic
+    }
+}
+.header-reseaux {
+    position: absolute;
+    top: 90%;
+    right: 0;
+    left: 90%;
+    bottom: 0;
+
+    img {
+        width: 20%;
     }
 }

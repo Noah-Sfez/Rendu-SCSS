@@ -1,5 +1,5 @@
 .partage {
-    height: 80vh;
+    height: 110vh;
     background-image: url(../../images/élément-1.png);
     background-repeat: repeat;
     display: grid;
@@ -8,10 +8,38 @@
     grid-template-rows: auto 1fr;
 
     &-img {
+        position: relative;
         justify-items: center;
-        width: 40%;
+        width: 70%;
         height: auto;
-        margin-left: 5%;
+        margin-left: 15%;
+        margin-top: 5%;
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            border-left: 10px solid $clr-white; // La ligne verticale blanche
+            transform: translateX(-50%); // Centrer la bordure exactement au milieu
+          }
+        
+          // Ligne horizontale
+          &::after {
+            content: '';
+            position: absolute;
+            top: 40%; // Devrait placer le bord supérieur de la ligne au milieu
+            left: 0;
+            right: 0;
+            height: 10px; // Donne une hauteur fixe à la ligne horizontale
+            background: $clr-white; // Utilise un fond plutôt qu'une bordure pour contrôler la hauteur
+          }
     
     }
     h2 {
@@ -19,7 +47,7 @@
         grid-column: 2 / 3;
         align-items: center;
         justify-items: start;
-        padding: 2% 0%;
+        padding: 4% 0%;
         color: $clr-green;
         font-size: $font-size-large;
         font-family: $font-family-poppins;
@@ -32,11 +60,11 @@
             color: $clr-grey;
             font-family: $font-family-poppins;
         }
-    
-
+        
     &-form {
         margin-top: 5%;
         display: flex;
+        justify-content: center;
         flex-direction: column;
         gap: 20px;
 
@@ -55,22 +83,33 @@
             font-size: 24px;
             width: 30%;
             border: none;
+            margin-left: 35%;
             border-radius: 8px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
         }
+
+        &-name {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+        }
+        &-cote {
+            display: flex;
+            gap: 10%;
+        }
     }
-
 }
-
 .partage-txt {
     width: 95%;
 }
 
 input {
     height: 30px;
+    border: 1px solid $clr-grey;
 }
 
 textarea {
     resize: none;
+    border: 1px solid $clr-grey;
 }
 
