@@ -7,7 +7,7 @@
     @include responsive($breakpoint-mobile) {
         flex-direction: column;
         height: 100%;
-        margin: 2% 0%;
+        margin: 2% 2%;
     }
 
     &-txt {
@@ -19,6 +19,7 @@
             font-size: $font-size-large;
             font-family: $font-family-poppins;
             margin-bottom: 5%;
+            font-weight: 600;
         }
         p {
             font-size: $font-size-base;
@@ -43,6 +44,9 @@
 .menu-carte {
     grid-column: 1 / 2;
     justify-content: center;
+    @include responsive($breakpoint-mobile) {
+        margin: 2% 2%;
+    }
 
     &-content {
         @include flex(start, start, true);
@@ -71,9 +75,26 @@
     }
 }
 
-.menu-carte-content.special{
-    border: 2px solid $clr-green;
-    padding: 1%;
+
+.menu-special{
+    >p {
+        >span {
+            background-color: $clr-green;
+            padding: 1%;
+        }
+        color: $clr-white;
+        font-family: $font-family-poppins;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    >div {
+        @extend .menu-carte-content;
+        border: 2px solid $clr-green;
+        padding: 1%;
+    }
+    
 }
 
 .menu-pub {

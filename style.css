@@ -143,7 +143,7 @@ li.button {
   }
 }
 .header-title h1 {
-  font-size: 128px;
+  font-size: 126px;
   color: white;
   font-family: "Poppins", sans-serif;
 }
@@ -154,11 +154,11 @@ li.button {
 }
 .header-title h2 {
   margin-top: 2%;
-  font-size: 52px;
+  font-size: 54px;
   position: relative;
   rotate: -9deg;
   color: white;
-  left: 30px;
+  left: 90px;
   font-family: "Poppins", sans-serif;
   font-style: italic;
 }
@@ -194,7 +194,7 @@ li.button {
 .surMesure {
   background-image: url(../../images/élément-1.png);
   background-repeat: repeat;
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   display: flex;
 }
@@ -205,8 +205,8 @@ li.button {
   }
 }
 .surMesure img {
-  width: 90%;
-  height: 90%;
+  width: 80%;
+  height: 80%;
 }
 .surMesure-content {
   display: flex;
@@ -228,6 +228,7 @@ li.button {
 }
 .surMesure-content h3 {
   font-size: 52px;
+  font-weight: 600;
   color: #B2D234;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -242,7 +243,7 @@ li.button {
   background-color: #B2D234;
   padding: 14px 60px;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   border: none;
   border-radius: 8px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
@@ -282,6 +283,7 @@ li.button {
 }
 .preparation-content h2 {
   font-size: 52px;
+  font-weight: 600;
   color: white;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -295,12 +297,19 @@ li.button {
   text-align: center;
   line-height: 24pt;
 }
+.preparation-content p strong {
+  font-weight: 600;
+}
+.preparation-content p .underline {
+  text-decoration: underline;
+}
 .preparation-content button {
   background-color: white;
-  width: 240px;
+  width: 250px;
   padding: 14px 60px;
   color: #B2D234;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 24px;
   border: none;
   border-radius: 8px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
@@ -319,7 +328,7 @@ li.button {
   .menu {
     flex-direction: column;
     height: 100%;
-    margin: 2% 0%;
+    margin: 2% 2%;
   }
 }
 .menu-txt {
@@ -331,6 +340,7 @@ li.button {
   font-size: 52px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 5%;
+  font-weight: 600;
 }
 .menu-txt p {
   font-size: 18px;
@@ -355,7 +365,12 @@ li.button {
   grid-column: 1/2;
   justify-content: center;
 }
-.menu-carte-content {
+@media screen and (max-width: 860px) {
+  .menu-carte {
+    margin: 2% 2%;
+  }
+}
+.menu-carte-content, .menu-special > div {
   display: flex;
   align-items: start;
   justify-content: start;
@@ -363,25 +378,36 @@ li.button {
   flex-direction: column;
   margin-bottom: 10%;
 }
-.menu-carte-content > div {
+.menu-carte-content > div, .menu-special > div > div {
   display: flex;
   justify-content: space-between;
   width: 80%;
 }
-.menu-carte-content h4 {
+.menu-carte-content h4, .menu-special > div h4 {
   font-size: 24px;
   color: #B2D234;
   font-family: "Poppins", sans-serif;
   margin-bottom: 2%;
   gap: 100px;
 }
-.menu-carte-content p {
+.menu-carte-content p, .menu-special > div p {
   color: #606060;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
 
-.menu-carte-content.special {
+.menu-special > p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-special > p > span {
+  background-color: #B2D234;
+  padding: 1%;
+}
+.menu-special > div {
   border: 2px solid #B2D234;
   padding: 1%;
 }

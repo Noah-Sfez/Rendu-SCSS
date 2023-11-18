@@ -82,7 +82,7 @@ li.button {
     }
 
     h1 {
-        font-size: 128px;
+        font-size: 126px;
         color: $clr-white;
         font-family: $font-family-poppins;
         @include responsive($breakpoint-mobile) {
@@ -92,11 +92,11 @@ li.button {
 
     h2 {
         margin-top: 2%;
-        font-size: $font-size-large;
+        font-size: $font-size-large + 2px;
         position: relative;
         rotate: -9deg;
         color: $clr-white;
-        left: 30px;
+        left: 90px;
         font-family: $font-family-poppins;
         font-style: italic;
         @include responsive($breakpoint-mobile) {

@@ -25,6 +25,7 @@
 
         h2 {
             font-size: $font-size-large;
+            font-weight: 600;
             color: $clr-white;
             font-family: $font-family-poppins;
             display: flex;
@@ -38,14 +39,21 @@
             font-family: $font-family-poppins;
             text-align: center;
             line-height: 24pt;
+            strong {
+                font-weight: 600;
+            }
+            .underline {
+                text-decoration: underline;
+            }
         }
 
         button {
             background-color: $clr-white;
-            width: 240px;
+            width: 250px;
             padding: 14px 60px;
             color: $clr-green;
-            font-size: $font-size-base;
+            font-weight: 600;
+            font-size: $font-size-base + 6px;
             border: none;
             border-radius: 8px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
