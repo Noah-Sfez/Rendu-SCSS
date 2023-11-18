@@ -51,9 +51,9 @@ header {
                 color: $clr-white;
                 font-family: $font-family-poppins;
                 font-size: $font-size-base;
-                transition: text-decoration 0.5s; // Ici, spécifie la propriété que tu veux animer
+                transition: text-decoration 0.5s; 
         
-                &:hover { // Utilise le & pour indiquer que c'est le même élément li
+                &:hover { 
                     text-decoration: underline;
                 }
             }
