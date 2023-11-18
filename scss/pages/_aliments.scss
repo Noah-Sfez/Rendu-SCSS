@@ -9,21 +9,32 @@
     justify-items: center;
     align-items: center;
 
+    @include responsive($breakpoint-mobile) {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
 }
 
 .cards {
     padding: 2%;
     @include flex(center, center, true);
+    display: flex;
     flex-direction: column;
     width: 80%;
     height: 50%;
+
+    @include responsive($breakpoint-mobile) {
+        display: block;
+        height: auto;
+        margin: 5% 0%;
+    }
+
 
     h2 {
         font-size: $font-size-large;
         color: $clr-white;
         font-family: $font-family-poppins;
-        display: flex;
-        flex-wrap: wrap;
         text-align: center;
         margin-bottom: 10%;
     }
@@ -46,6 +57,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 40px;
+
+
+        @include responsive($breakpoint-mobile) {
+            gap: 0;
+        }
         li {
             line-height: 20pt;
             font-size: $font-size-base;

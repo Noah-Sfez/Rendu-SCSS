@@ -3,7 +3,12 @@
     background-repeat: repeat;
     height: 120vh;
     @include flex(center, center, true);
-    margin-top: 5%;
+
+    @include responsive($breakpoint-mobile) {
+        flex-direction: column;
+        height: 100%;
+        margin: 2% 0%;
+    }
 
     &-txt {
         width: 80%;
@@ -28,7 +33,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 180px;
-    margin-top: 1%;
+    @include responsive($breakpoint-mobile) {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
 }
 
 .menu-carte {
@@ -55,6 +64,7 @@
         }
         p {
             color: $clr-grey;
+            font-size: $font-size-base;
             font-family: $font-family-poppins;
         }
         

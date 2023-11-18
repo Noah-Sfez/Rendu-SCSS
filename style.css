@@ -82,10 +82,29 @@ header nav {
   padding: 40px;
   position: relative;
 }
+@media screen and (max-width: 860px) {
+  header nav {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 860px) {
+  header nav img {
+    width: 70%;
+    margin: 0 10%;
+  }
+}
 header nav ul {
   display: flex;
   align-items: center;
   gap: 60px;
+}
+@media screen and (max-width: 860px) {
+  header nav ul {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 header nav ul li {
   color: white;
@@ -118,10 +137,20 @@ li.button {
   left: 0;
   bottom: 0;
 }
+@media screen and (max-width: 860px) {
+  .header-title {
+    height: 100vh;
+  }
+}
 .header-title h1 {
   font-size: 128px;
   color: white;
   font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 860px) {
+  .header-title h1 {
+    font-size: 80px;
+  }
 }
 .header-title h2 {
   margin-top: 2%;
@@ -133,6 +162,13 @@ li.button {
   font-family: "Poppins", sans-serif;
   font-style: italic;
 }
+@media screen and (max-width: 860px) {
+  .header-title h2 {
+    font-size: 40px;
+    left: 0;
+    margin-top: 5%;
+  }
+}
 
 .header-reseaux {
   position: absolute;
@@ -141,8 +177,18 @@ li.button {
   left: 90%;
   bottom: 0;
 }
+@media screen and (max-width: 860px) {
+  .header-reseaux {
+    top: 80%;
+  }
+}
 .header-reseaux img {
   width: 20%;
+}
+@media screen and (max-width: 860px) {
+  .header-reseaux img {
+    width: 70%;
+  }
 }
 
 .surMesure {
@@ -151,6 +197,12 @@ li.button {
   height: 120vh;
   width: 100%;
   display: flex;
+}
+@media screen and (max-width: 860px) {
+  .surMesure {
+    flex-direction: column;
+    height: 100%;
+  }
 }
 .surMesure img {
   width: 90%;
@@ -164,6 +216,15 @@ li.button {
   margin-left: 10%;
   height: 80%;
   width: 100%;
+}
+@media screen and (max-width: 860px) {
+  .surMesure-content {
+    margin-left: 0;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+  }
 }
 .surMesure-content h3 {
   font-size: 52px;
@@ -212,6 +273,13 @@ li.button {
   gap: 40px;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 860px) {
+  .preparation-content {
+    width: 80%;
+    margin-left: 0;
+    padding: 5%;
+  }
+}
 .preparation-content h2 {
   font-size: 52px;
   color: white;
@@ -246,7 +314,13 @@ li.button {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 5%;
+}
+@media screen and (max-width: 860px) {
+  .menu {
+    flex-direction: column;
+    height: 100%;
+    margin: 2% 0%;
+  }
 }
 .menu-txt {
   width: 80%;
@@ -269,7 +343,12 @@ li.button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 180px;
-  margin-top: 1%;
+}
+@media screen and (max-width: 860px) {
+  .menu-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 
 .menu-carte {
@@ -298,6 +377,7 @@ li.button {
 }
 .menu-carte-content p {
   color: #606060;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -356,6 +436,12 @@ li.button {
   justify-items: center;
   align-items: center;
 }
+@media screen and (max-width: 860px) {
+  .aliments {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
 
 .cards {
   padding: 2%;
@@ -363,16 +449,22 @@ li.button {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  display: flex;
   flex-direction: column;
   width: 80%;
   height: 50%;
+}
+@media screen and (max-width: 860px) {
+  .cards {
+    display: block;
+    height: auto;
+    margin: 5% 0%;
+  }
 }
 .cards h2 {
   font-size: 52px;
   color: white;
   font-family: "Poppins", sans-serif;
-  display: flex;
-  flex-wrap: wrap;
   text-align: center;
   margin-bottom: 10%;
 }
@@ -391,6 +483,11 @@ li.button {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
+@media screen and (max-width: 860px) {
+  .cards div {
+    gap: 0;
+  }
+}
 .cards div li {
   line-height: 20pt;
   font-size: 18px;
@@ -407,6 +504,14 @@ li.button {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
 }
+@media screen and (max-width: 860px) {
+  .partage {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+    height: 100%;
+  }
+}
 .partage-img {
   position: relative;
   justify-items: center;
@@ -415,6 +520,13 @@ li.button {
   margin-left: 15%;
   margin-top: 5%;
   overflow: hidden;
+}
+@media screen and (max-width: 860px) {
+  .partage-img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 40%;
+  }
 }
 .partage-img img {
   display: block;
@@ -449,6 +561,13 @@ li.button {
   font-size: 52px;
   font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 860px) {
+  .partage h2 {
+    grid-column: 1/2;
+    justify-items: center;
+    font-size: 42px;
+  }
+}
 .partage p {
   margin-top: 2%;
   font-size: 18px;
@@ -456,12 +575,24 @@ li.button {
   color: #606060;
   font-family: "Poppins", sans-serif;
 }
+@media screen and (max-width: 860px) {
+  .partage p {
+    grid-column: 1/2;
+    text-align: center;
+  }
+}
 .partage-form {
   margin-top: 5%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+}
+@media screen and (max-width: 860px) {
+  .partage-form {
+    margin-top: 0;
+    align-items: center;
+  }
 }
 .partage-form label {
   color: #B2D234;
@@ -481,6 +612,13 @@ li.button {
   border-radius: 8px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
 }
+@media screen and (max-width: 860px) {
+  .partage-form button {
+    margin-left: 0;
+    width: 50%;
+    margin-bottom: 5%;
+  }
+}
 .partage-form-name {
   display: flex;
   flex-direction: column;
@@ -490,6 +628,14 @@ li.button {
   display: flex;
   gap: 10%;
 }
+@media screen and (max-width: 860px) {
+  .partage-form-cote {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .partage-txt {
   width: 95%;
@@ -498,11 +644,13 @@ li.button {
 input {
   height: 30px;
   border: 1px solid #606060;
+  width: 90%;
 }
 
 textarea {
   resize: none;
   border: 1px solid #606060;
+  width: 90%;
 }
 
 footer {
@@ -513,20 +661,47 @@ footer {
   align-items: center;
   padding: 0 5%;
 }
+@media screen and (max-width: 860px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    padding: 0;
+  }
+}
 
 .footer-list {
   color: white;
   text-align: center;
+}
+@media screen and (max-width: 860px) {
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 }
 .footer-list h4 {
   font-size: 27px;
   font-family: "Poppins", sans-serif;
   margin-bottom: 5%;
 }
+@media screen and (max-width: 860px) {
+  .footer-list h4 {
+    margin: 5% 0;
+  }
+}
 .footer-list li {
   margin-bottom: 5%;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 860px) {
+  .footer-logo {
+    justify-self: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
 
+    @include responsive($breakpoint-mobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        justify-items: center;
+        height: 100%;
+        
+    }
+
     &-img {
         position: relative;
         justify-items: center;
@@ -15,6 +23,13 @@
         margin-left: 15%;
         margin-top: 5%;
         overflow: hidden;
+
+        @include responsive($breakpoint-mobile) {
+            margin-left: 0;
+            margin-top: 0;
+            width: 40%;
+        }
+
         img {
             display: block;
             width: 100%;
@@ -51,6 +66,11 @@
         color: $clr-green;
         font-size: $font-size-large;
         font-family: $font-family-poppins;
+        @include responsive($breakpoint-mobile) {
+            grid-column: 1 / 2;
+            justify-items: center;
+            font-size: 42px;
+        }
     }        
         
         p {
@@ -59,6 +79,10 @@
             line-height: 24pt;
             color: $clr-grey;
             font-family: $font-family-poppins;
+            @include responsive($breakpoint-mobile) {
+                grid-column: 1 / 2;
+                text-align: center;
+            }
         }
         
     &-form {
@@ -67,6 +91,11 @@
         justify-content: center;
         flex-direction: column;
         gap: 20px;
+
+        @include responsive($breakpoint-mobile) {
+            margin-top: 0;
+            align-items: center;
+        }
 
         & label {
             color: $clr-green;
@@ -86,6 +115,12 @@
             margin-left: 35%;
             border-radius: 8px;
             box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+
+            @include responsive($breakpoint-mobile) {
+                margin-left: 0;
+                width: 50%;
+                margin-bottom: 5%;
+            }
         }
 
         &-name {
@@ -96,6 +131,12 @@
         &-cote {
             display: flex;
             gap: 10%;
+            @include responsive($breakpoint-mobile) {
+                flex-direction: column;
+                gap: 20px;
+                padding: 0;
+                margin: 0;
+            }
         }
     }
 }
@@ -106,10 +147,12 @@
 input {
     height: 30px;
     border: 1px solid $clr-grey;
+    width: 90%;
 }
 
 textarea {
     resize: none;
     border: 1px solid $clr-grey;
+    width: 90%;
 }
 

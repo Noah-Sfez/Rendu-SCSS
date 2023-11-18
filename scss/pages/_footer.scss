@@ -5,6 +5,12 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     padding: 0 5%;
+    @include responsive($breakpoint-mobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 100%;
+        padding: 0;
+    }
 }
 
 .footer {
@@ -12,16 +18,32 @@ footer {
     &-list {
         color: $clr-white;
         text-align: center;
+        @include responsive($breakpoint-mobile) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
 
         h4 {
             font-size: 27px;
             font-family: $font-family-poppins;
             margin-bottom: 5%;
+            @include responsive($breakpoint-mobile) {
+                margin: 5% 0;
+            }
         }
         li {
             margin-bottom: 5%;
             font-size: $font-size-base;
             font-family: $font-family-poppins;
+        }
+    }
+
+    &-logo {
+        @include responsive($breakpoint-mobile) {
+            justify-self: center;
         }
     }
 }

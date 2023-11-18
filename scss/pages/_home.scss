@@ -25,11 +25,27 @@ header {
       justify-content: space-between;
       padding: 40px;
       position: relative;
+
+      @include responsive($breakpoint-mobile) {
+        flex-direction: column;
+        padding: 20px;
+      }
+        img {
+            @include responsive($breakpoint-mobile) {
+                width: 70%;
+                margin: 0 10%;
+            }
+        }
   
         ul {
             display: flex;
             align-items: center;
             gap: 60px;
+            @include responsive($breakpoint-mobile) {
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+            }
     
             li {
                 color: $clr-white;
@@ -61,11 +77,17 @@ li.button {
     right: 0;
     left: 0;
     bottom: 0;
+    @include responsive($breakpoint-mobile) {
+        height: 100vh;
+    }
 
     h1 {
         font-size: 128px;
         color: $clr-white;
         font-family: $font-family-poppins;
+        @include responsive($breakpoint-mobile) {
+            font-size: 80px;
+        }
     }
 
     h2 {
@@ -76,7 +98,12 @@ li.button {
         color: $clr-white;
         left: 30px;
         font-family: $font-family-poppins;
-        font-style: italic
+        font-style: italic;
+        @include responsive($breakpoint-mobile) {
+            font-size: 40px;
+            left: 0;
+            margin-top: 5%;
+        }
     }
 }
 .header-reseaux {
@@ -85,8 +112,14 @@ li.button {
     right: 0;
     left: 90%;
     bottom: 0;
+    @include responsive($breakpoint-mobile) {
+        top: 80%;
+    }
 
     img {
         width: 20%;
+        @include responsive($breakpoint-mobile) {
+            width: 70%;
+        }
     }
 }

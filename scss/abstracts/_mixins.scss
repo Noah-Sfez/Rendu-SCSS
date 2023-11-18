@@ -8,6 +8,9 @@
     }
 }
 
-//.header {
-//    @include flex(center, space-between, true);
-//}
+@mixin responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
