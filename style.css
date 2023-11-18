@@ -507,7 +507,7 @@ li.button {
 .cards div {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 100px;
 }
 @media screen and (max-width: 860px) {
   .cards div {

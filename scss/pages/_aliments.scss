@@ -56,7 +56,7 @@
     & div {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 100px;
 
 
         @include responsive($breakpoint-mobile) {
